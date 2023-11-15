@@ -1,6 +1,6 @@
 // Helper-Klasse mit selbstgeschriebenen Hilfsmethoden zu Arrays und Lösungen aus H-/P-Aufgaben Lösungen 
 // Geschrieben von Daniel Poock für eigene Nutzung während der Präsenzhausaufgabe am 15.11.2023
-// Stand: 15.11.2023 (15:15)
+// Stand: 15.11.2023 (15:31)
 
 import javax.crypto.spec.PSource;
 import javax.swing.*;
