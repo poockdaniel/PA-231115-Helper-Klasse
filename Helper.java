@@ -10,7 +10,8 @@ public class Helper {
     public static void main(String[] args) {
         
     }
-
+    
+    // Anfang selbstgeschriebene Helfer-Methoden (Manche könnten ähnlich zu Lösungen sein wegen ähnlicher Funktionalität)
     public static int[] reverseIntArray(int[] array) {
         int[] temp = new int[array.length];
         for (int i = 0; i < array.length; i++) {
@@ -226,7 +227,29 @@ public class Helper {
         }
         return maxLength;
     }
+    // Ende selbstgeschriebener Methoden
 
+    // Von W02P02 Lösungen: https://bitbucket.ase.in.tum.de/projects/PGDP2324W02P02/repos/pgdp2324w02p02-solution/browse/src/pgdp/math/ControlStructuresI.java (Stand: 15.11.23)
+    public static int calculateNumberOfDigits(int n) {
+        int numberOfDigits = 0;
+        while (n > 0) {
+            n = n / 10;
+            numberOfDigits = numberOfDigits + 1;
+        }
+        return numberOfDigits;
+    }
+
+    // Von W02P02 Lösungen: https://bitbucket.ase.in.tum.de/projects/PGDP2324W02P02/repos/pgdp2324w02p02-solution/browse/src/pgdp/math/ControlStructuresI.java (Stand: 15.11.23)
+    public static int reverseNumber(int n) {
+        int reversedNumber = 0;
+        while (n > 0) {
+            reversedNumber = reversedNumber * 10;
+            reversedNumber = reversedNumber + n % 10;
+            n = n / 10;
+        }
+        return reversedNumber;
+    }
+    
 
     // Von W03P01 Lösungen (abgeänderter Funktionsname): https://bitbucket.ase.in.tum.de/projects/PGDP2324W03P01/repos/pgdp2324w03p01-solution/browse/src/pgdp/array/Array.java (Stand: 15.11.23)
     public static void printArray(int[] a) {
